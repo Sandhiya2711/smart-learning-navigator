@@ -1,0 +1,28 @@
+{
+  "name": "skillverse-ai",
+  "version": "1.0.0",
+  "description": "SkillVerse AI — Smart Learning Pathway Navigator",
+  "private": true,
+  "scripts": {
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build",
+    "backend:dev": "python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000 --reload",
+    "backend:test": "python backend/test_api.py",
+    "db:seed": "python -m backend.services.seed",
+    "db:migrate": "alembic upgrade head",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down"
+  },
+  "keywords": [
+    "skillverse",
+    "learning-pathway",
+    "scikit-learn",
+    "fastapi",
+    "react",
+    "vite",
+    "recharts",
+    "hackathon"
+  ],
+  "author": "SkillVerse AI Team",
+  "license": "MIT"
+}
